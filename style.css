@@ -29,7 +29,6 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -46,9 +45,17 @@ body {
     overflow: hidden;
 }
 
-.image {
+    .card-image {
+    /* width: 85%; */
+    width: 362px;
+    }
+
+.image, img {
+    /* width: 100%; */
     width: 362px;
     height: 100%;
+    /* background-image: url("images/image-product-desktop.jpg"); */
+    background-size: cover;
 }
 
 .card-content {
@@ -57,6 +64,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 40px 30px 40px 30px;
+    width: 80%;
 }
 
 .product-type {
@@ -152,17 +160,28 @@ body {
 
     .card {
         flex-direction: column;
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 75%;
     }
 
     .card-image {
-    width: 50%;
+    width: 100%;
     height: 40%;
     }
 
+    img{
+        display: none;
+    }
+
+    .image {
+        background-image: url("images/image-product-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
     .card-content {
-    padding: 1.8rem;
+        width: 100%;
+        padding: 1.8rem;
     }
 
     .product-type {
@@ -171,13 +190,13 @@ body {
     }
 
     .product-name {
-        font-size: 0.8rem;
+        font-size: 1rem;
         line-height: 2rem;
         padding-bottom: 1rem;
     }
 
     .product-details {
-        font-size: 0.6rem;
+        font-size: 0.73rem;
         line-height: 1.4rem;
         padding-bottom: 1rem;
     }
@@ -196,21 +215,24 @@ body {
 
 }
 
+
+
 @media (max-width: 375px) { 
 
     .card {
         flex-direction: column;
         width: 90%;
-        height: 90%;
+        height: 80%;
     }
 
     .card-image {
-    width: 50%;
+    width: 100%;
     height: 40%;
     }
 
     .card-content {
-    padding: 1.8rem;
+        width: 100%;
+        padding: 1.8rem;
     }
 
     .product-name {
@@ -219,7 +241,7 @@ body {
 
     .product-details {
         font-size: 0.72rem;
-        line-height: 1.3rem;
+        line-height: 1.4rem;
         padding-bottom: 1rem;
     }
 
@@ -237,21 +259,28 @@ body {
 
 }
 
+
+
 @media (max-width: 320px) { 
 
     .card {
         flex-direction: column;
         width: 90%;
-        height: 90%;
+        height: 70%;
     }
 
     .card-image {
-    width: 50%;
+    width: 100%;
     height: 40%;
     }
 
+    .image {
+        width: 100%;
+    }
+
     .card-content {
-    padding: 1.8rem;
+        width: 100%;
+        padding: 1.8rem;
     }
 
     .product-type {
@@ -260,7 +289,7 @@ body {
     }
 
     .product-name {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         line-height: 2rem;
         padding-bottom: 1rem;
     }
