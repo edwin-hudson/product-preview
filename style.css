@@ -46,7 +46,7 @@ body {
 }
 
 .image {
-    width: 20vw;
+    width: 362px;
     height: 100%;
 }
 
@@ -55,7 +55,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 24px;
+    padding: 40px 30px 40px 30px;
 }
 
 .product-type {
@@ -68,16 +68,17 @@ body {
 }
 
 .product-name {
-    font-family: "Fraunces", serif;
-    font-weight: 700;
-    font-size: 1.25rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
     color: var(--Black);
 }
 
 .product-details {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: var(--Grey);
 }
 
@@ -85,7 +86,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .new-price{
@@ -98,7 +99,7 @@ body {
 .old-price {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 1.2rem;
     text-decoration: line-through;
     color: var(--Grey);
 }
@@ -123,17 +124,23 @@ body {
     gap: 10px;
 }
 
-.btn-name {
-    color: var(--White);
-    font-size: 14px;
+.btn:hover {
+    cursor: pointer;
 }
 
+.btn:active {
+    background: var(--Green-700);
+    cursor: pointer;
+}
 
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
 
-
-svg {
-    width: 5px;
-    height: 5px;
-    background: var(--White);
-    color: var(--Green-500);
+.btn-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: var(--White);
 }
