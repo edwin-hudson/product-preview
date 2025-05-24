@@ -39,11 +39,9 @@ body {
     flex-direction: row;
     background: var(--White);
     border-radius: 12px;
-    /* width: 724px; */
     width: 45.25rem;
-    /* height: 544px; */
     height: 35rem;
-    min-height: 544px;
+    min-height: 35rem;
     overflow: hidden;
 }
 
